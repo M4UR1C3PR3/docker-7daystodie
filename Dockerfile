@@ -11,6 +11,8 @@ USER steam
 
 ADD steam/bin/server.sh /home/steam/bin/server.sh
 
+VOLUME ["/home/steam"]
+
 ENV STEAM_APP_ID=294420 \
     STEAM_APP_CMD="/home/steam/bin/server.sh" \
     SDTD_CMD="/home/steam/app/7DaysToDieServer.x86_64" \
