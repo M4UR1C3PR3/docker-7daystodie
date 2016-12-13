@@ -15,7 +15,7 @@ VOLUME ["/home/steam/public"]
 
 ENV STEAM_APP_ID=294420 \
     STEAM_APP_CMD="/home/steam/bin/server.sh" \
-    SDTD_CMD="/home/steam/app/public" \
+    SDTD_CMD="/home/steam/public" \
     SDTD_CONFIG_FILE="/home/steam/public/serverconfig.xml" \
     SDTD_TELNET_PORT=8081
 
