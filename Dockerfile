@@ -11,12 +11,12 @@ USER steam
 
 ADD steam/bin/server.sh /home/steam/bin/server.sh
 
-VOLUME ["/home/steam"]
+VOLUME ["/home/steam/public"]
 
 ENV STEAM_APP_ID=294420 \
     STEAM_APP_CMD="/home/steam/bin/server.sh" \
-    SDTD_CMD="/home/steam/app/7DaysToDieServer.x86_64" \
-    SDTD_CONFIG_FILE="/home/steam/app/serverconfig.xml" \
+    SDTD_CMD="/home/steam/app/public" \
+    SDTD_CONFIG_FILE="/home/steam/public/serverconfig.xml" \
     SDTD_TELNET_PORT=8081
 
 EXPOSE 26900-26902 26900-26902/udp
